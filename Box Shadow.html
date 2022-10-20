@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            background-color: rgb(250, 251, 252);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: -10px -10px 10px 10px rgb(193, 191, 191);
+            box-shadow: 0px 0px 10px 3px rgb(198, 191, 191);
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        .box:hover{
+            transform: scale(1.2);
+        }   
+        @media only screen and (max-width:700px){
+            .container{
+                flex-wrap: wrap;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem, nemo sapiente eaque id magnam in commodi necessitatibus aspernatur ipsum earum. Pariatur itaque eligendi est, nesciunt quae vero sequi eaque?</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem, nemo   sapiente eaque id magnam in commodi necessitatibus aspernatur ipsum earum. Pariatur   itaque eligendi est, nesciunt quae vero sequi eaque?</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem, nemo   sapiente eaque id magnam in commodi necessitatibus aspernatur ipsum earum. Pariatur   itaque eligendi est, nesciunt quae vero sequi eaque?</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>Card 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem, nemo   sapiente eaque id magnam in commodi necessitatibus aspernatur ipsum earum. Pariatur   itaque eligendi est, nesciunt quae vero sequi eaque?</p>
+        </div>
+        
+    </div>
+</body>
+</html>
